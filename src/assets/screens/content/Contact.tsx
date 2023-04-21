@@ -8,17 +8,17 @@ export default () => {
       <nav className="flex flex-row justify-between items-center bg-slate-900 p-4">
         <div className="flex flex-row items-center">
             <Link to="/">
-                <img src="src\assets\images\Logo.jpg" alt="Logo" className="h-20 w-20 rounded-full"/>
+                <img src="src\assets\images\Logo.jpg" alt="Logo" className="h-14 w-14 md:h-20 md:w-20 rounded-full"/>
             </Link>
         </div>
         <div className="flex flex-row items-center">
-            <Link to="/About" className="text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
+            <Link to="/About" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
                 About me
             </Link>
-            <Link to="/Project" className="text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
+            <Link to="/Project" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
                 Projects
             </Link>
-            <p className="text-slate-500 text-xl pl-4 font-bold">Contact</p>
+            <p className="text-slate-500 text-base md:text-xl pl-4 font-bold">Contact</p>
         </div>
       </nav>
     </div>
@@ -28,7 +28,7 @@ export default () => {
         </div>
         <article className="flex flex-col items-center align-middle justify-center md:flex-row md:items-center">
             <div className="flex flex-col items-center max-w-lg md:basis-3/5">
-                <h1 className="text-3xl text-center text-slate-200 max-w-[32rem] font-bold">About me</h1>
+                <h1 className="text-3xl text-center text-slate-200 max-w-[32rem] font-bold mb-4">About me</h1>
                 <p className="text-slate-200 max-w-[32rem] leading-relaxed md:text-lg text-left">
                     Hi there, I'm currently a <span className="font-bold text-yellow-500">student at Howest </span> in Belgium who would like to become a full stack web developper.
                     I have been able to learn a lot of things over the past 2 years that I'm studying and I hope to be able to learn even more in the future.

@@ -8,15 +8,15 @@ export default () => {
       <nav className="flex flex-row justify-between items-center bg-slate-900 p-4">
         <div className="flex flex-row items-center">
             <Link to="/">
-                <img src="src\assets\images\Logo.jpg" alt="Logo" className="h-20 w-20 rounded-full"/>
+                <img src="src\assets\images\Logo.jpg" alt="Logo" className="h-14 w-14 md:h-20 md:w-20 rounded-full"/>
             </Link>
         </div>
         <div className="flex flex-row items-center">
-            <Link to="/About" className="text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
+            <Link to="/About" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
                 About me
             </Link>
-            <p className="text-slate-500 text-xl pl-4 font-bold">Projects</p>
-            <Link to="/Contact" className="text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
+            <p className="text-slate-500 text-base md:text-xl pl-4 font-bold">Projects</p>
+            <Link to="/Contact" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
                 Contact
             </Link>
         </div>
@@ -24,7 +24,7 @@ export default () => {
     </div>
     <div className="flex flex-col align-middle justify-center text-center">
         <div className="mb-[20vh] mt-[15vh] text-center">
-            <h1 className="text-4xl text-center text-slate-200">Project</h1>
+            <h1 className="text-4xl text-center text-slate-200">Projects</h1>
         </div>
         <article className="flex flex-col items-center align-middle justify-center md:flex-row md:items-center">
             <div className="flex flex-col items-center max-w-lg md:basis-3/5">
