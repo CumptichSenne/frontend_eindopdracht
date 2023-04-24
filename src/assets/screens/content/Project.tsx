@@ -16,9 +16,6 @@ export default () => {
                 About me
             </Link>
             <p className="text-slate-500 text-base md:text-xl pl-4 font-bold">Projects</p>
-            <Link to="/Contact" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
-                Contact
-            </Link>
         </div>
       </nav>
     </div>
@@ -49,6 +46,14 @@ export default () => {
             </div>
         </article>
     </div>
+    <footer className="flex flex-col items-center justify-center pb-4 text-slate-300">
+        <p>
+            Made by Senne Cumptich
+        </p>
+        <p>
+            © 2023 
+        </p>
+    </footer>
   </div>
  );
 }
