@@ -16,6 +16,9 @@ export default () => {
             <Link to="/Project" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
                 Projects
             </Link>
+            <Link to="/Contact" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
+                Contact
+            </Link>
         </div>
       </nav>
     </div>
