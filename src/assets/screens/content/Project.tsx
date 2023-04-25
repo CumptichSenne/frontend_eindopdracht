@@ -36,7 +36,7 @@ export default () => {
                             For the data I used an open API from Github and with the help of <span className="font-bold text-yellow-500">Javascript</span> I made it possible to display the data on the website.
                         </p>
                     </div>
-                    <div className="flex flex-row md:basis-3/5 md:mr-8 max-w-min gap-2">
+                    <div className="md:flex flex-row md:basis-3/5 md:mr-8 max-w-min gap-2 hidden">
                         <div className="bg-slate-700 rounded-lg drop-shadow-2xl">
                             <p className="text-slate-200 leading-relaxed md:text-lg text-left m-2">
                                 HTML
@@ -66,8 +66,13 @@ export default () => {
                             Smart Pool is a project which can be used to get all kinds of information about <span className="font-bold text-yellow-500">the water in your pool</span>.
                             You can get the temperature of the water, how clean your water is and the PH value.
                         </p>
+                        <p className="text-slate-200 max-w-[32rem] leading-relaxed md:text-lg text-left m-4">
+                            This project was made with the help of a lot of different programming languages. The website is made with <span className="font-bold text-yellow-500">HTML</span>, <span className="font-bold text-yellow-500">CSS</span> and <span className="font-bold text-yellow-500">Javascript</span>.
+                            The sensors are connected to a Raspberry Pi which is connected to a <span className="font-bold text-yellow-500">MySQL</span> database.
+                            For the data visualization I used <span className="font-bold text-yellow-500">Python</span>.
+                        </p>
                     </div>
-                    <div className="flex flex-row md:basis-3/5 md:ml-8 max-w-min gap-2">
+                    <div className="md:flex flex-row md:basis-3/5 md:ml-8 max-w-min gap-2 hidden">
                         <div className="bg-slate-700 rounded-lg drop-shadow-2xl">
                             <p className="text-slate-200 leading-relaxed md:text-lg text-left m-2">
                                 HTML
@@ -85,7 +90,7 @@ export default () => {
                         </div>
                         <div className="bg-slate-700 rounded-lg drop-shadow-2xl">
                             <p className="text-slate-200 leading-relaxed md:text-lg text-left m-2">
-                                C++
+                                C
                             </p>
                         </div>
                         <div className="bg-slate-700 rounded-lg drop-shadow-2xl">
@@ -117,8 +122,14 @@ export default () => {
                             This is my most recent project that I made for school where you can play up to 3 different games.
                             The user can choose between Red vs Blue, Simon says and Zen. During the chosen game the player has to push buttons that are lit up with LED's.
                         </p>
+                        <p className="text-slate-200 max-w-[32rem] leading-relaxed md:text-lg text-left m-4">
+                            This was a team project where I was responsible for the programming and design of the website.
+                            The website was build with <span className="font-bold text-yellow-500">HTML</span>, <span className="font-bold text-yellow-500">CSS</span> and <span className="font-bold text-yellow-500">Javascript</span>.
+                            To make the actual game we used <span className="font-bold text-yellow-500">C</span> and <span className="font-bold text-yellow-500">C#</span>.
+                            The data from the game is stored in a <span className="font-bold text-yellow-500">MySQL</span> database.
+                        </p>
                     </div>
-                    <div className="flex flex-row md:basis-3/5 md:mr-8 max-w-min gap-2">
+                    <div className="md:flex flex-row md:basis-3/5 md:mr-8 max-w-min gap-2 hidden">
                         <div className="bg-slate-700 rounded-lg drop-shadow-2xl">
                             <p className="text-slate-200 leading-relaxed md:text-lg text-left m-2">
                                 HTML
@@ -136,7 +147,7 @@ export default () => {
                         </div>
                         <div className="bg-slate-700 rounded-lg drop-shadow-2xl">
                             <p className="text-slate-200 leading-relaxed md:text-lg text-left m-2">
-                                C++
+                                C
                             </p>
                         </div>
                         <div className="bg-slate-700 rounded-lg drop-shadow-2xl">
@@ -151,7 +162,7 @@ export default () => {
                         </div>
                     </div>
                 </div>
-                <div className=" flex justify-center lg:basis-1/5 md:transform md:transition md:hover:scale-125 mt-8 md:mt-0">
+                <div className=" flex justify-center lg:basis-1/5 md:transform md:transition md:hover:scale-125">
                     <img src="src\assets\images\teamproject.jpg" alt="Team project" className="h-64 w-64 rounded-xl drop-shadow-2xl"/>
                 </div>
             </article>

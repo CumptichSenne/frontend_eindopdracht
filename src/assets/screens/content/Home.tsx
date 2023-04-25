@@ -29,13 +29,13 @@ export default () => {
                 <h1 className="text-4xl text-center text-slate-200 font-bold">About me</h1>
             </div>
             <article className="flex flex-col items-center align-middle justify-center md:flex-row md:items-center m-4 mb-[6vh]">
-                <div className="flex flex-col items-center max-w-lg md:basis-3/5 mt-8 bg-slate-700 md:mr-8 rounded-lg drop-shadow-2xl">
+                <div className="flex flex-col items-center max-w-lg md:basis-3/5 bg-slate-700 md:mr-8 rounded-lg drop-shadow-2xl">
                     <p className="text-slate-200 max-w-[32rem] leading-relaxed md:text-lg text-left m-4">
                         Hi there, I'm currently a <span className="font-bold text-yellow-500">student at Howest </span> in Belgium who would like to become a full stack web developer.
                         I have been able to learn a lot of things over the past 2 years and I hope to be able to learn even more in the future.
                     </p>
                     <p className="mt-6 text-center flex justify-center text-slate-200 mb-2">
-                        Want to know more about me?{' '}
+                        Want to know more about me?
                     </p>
                     <Link to="/About" className="text-yellow-500 mb-4">
                         About me
@@ -56,7 +56,7 @@ export default () => {
                         Per movie you can find the release date, the director and how much money that specific movie made.
                     </p>
                     <p className="mt-6 text-center flex justify-center text-slate-200 mb-2">
-                        Want to know more about this project?{' '}
+                        Want to know more about this project?
                     </p>
                     <Link to="/Project" className="text-yellow-500 mb-4">
                         Go to my project page
@@ -74,7 +74,7 @@ export default () => {
                         You can get the temperature of the water, how clean your water is and the PH value.
                     </p>
                     <p className="mt-6 text-center flex justify-center text-slate-200 mb-2">
-                        Want to know more about this project?{' '}
+                        Want to know more about this project?
                     </p>
                     <Link to="/Project" className="text-yellow-500 mb-4">
                         Go to my project page
@@ -116,15 +116,15 @@ export default () => {
                         If you would like to get in touch with me you can do so by visiting my LinkedIn or Github page.
                     </p>
                     <div className="flex flex-row items-center justify-around">
-                        <Link to="https://www.linkedin.com/in/senne-cumptich-a7b592273/" className="text-yellow-500 mb-4 flex">
+                        <Link to="https://www.linkedin.com/in/senne-cumptich-a7b592273/" target="/blank" className="text-yellow-500 mb-4 flex">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#e2e8f0" stroke="#e2e8f0" className="flex">
                                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                             </svg>
                         </Link>
-                        <Link to="https://github.com/CumptichSenne" className="text-yellow-500 mb-4 flex">
+                        <Link to="https://github.com/CumptichSenne" target="/blank" className="text-yellow-500 mb-4 flex">
                             <svg viewBox="0 -3.5 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" fill="#e2e8f0" stroke="#e2e8f0" className="w-8 h-8 flex">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_bgCarrier"></g>
+                                <g id="SVGRepo_tracerCarrier"></g>
                                 <g id="SVGRepo_iconCarrier"> 
                                     <g fill="#e2e8f0"> 
                                         <path d="M127.505 0C57.095 0 0 57.085 0 127.505c0 56.336 36.534 104.13 87.196 120.99 6.372 1.18 8.712-2.766 8.712-6.134 0-3.04-.119-13.085-.173-23.739-35.473 7.713-42.958-15.044-42.958-15.044-5.8-14.738-14.157-18.656-14.157-18.656-11.568-7.914.872-7.752.872-7.752 12.804.9 19.546 13.14 19.546 13.14 11.372 19.493 29.828 13.857 37.104 10.6 1.144-8.242 4.449-13.866 8.095-17.05-28.32-3.225-58.092-14.158-58.092-63.014 0-13.92 4.981-25.295 13.138-34.224-1.324-3.212-5.688-16.18 1.235-33.743 0 0 10.707-3.427 35.073 13.07 10.17-2.826 21.078-4.242 31.914-4.29 10.836.048 21.752 1.464 31.942 4.29 24.337-16.497 35.029-13.07 35.029-13.07 6.94 17.563 2.574 30.531 1.25 33.743 8.175 8.929 13.122 20.303 13.122 34.224 0 48.972-29.828 59.756-58.22 62.912 4.573 3.957 8.648 11.717 8.648 23.612 0 17.06-.148 30.791-.148 34.991 0 3.393 2.295 7.369 8.759 6.117 50.634-16.879 87.122-64.656 87.122-120.973C255.009 57.085 197.922 0 127.505 0"></path> 
@@ -148,4 +148,3 @@ export default () => {
     </div>
  );
 }
-

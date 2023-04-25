@@ -34,7 +34,7 @@ export default () => {
                     
                 </p>
             </div>
-            <div className=" flex justify-center lg:basis-1/5 transform transition md:hover:scale-125">
+            <div className=" flex justify-center lg:basis-1/5 md:scale-125">
                 <img src="src\assets\images\SenneCumptich.jpg" alt="SenneCumptich" className=" h-64 w-36 rounded-xl drop-shadow-2xl"/>
             </div>
         </article>
@@ -49,8 +49,8 @@ export default () => {
                     When I do have a little bit of free time I also like to draw. I have been drawing for about 3 years now and I really enjoy it because it's a great way to empty your mind.
                 </p>
             </div>
-            <div className=" flex justify-center lg:basis-1/5 transform transition md:hover:scale-125">
-                <img src="src\assets\images\Hobby.jpg" alt="Hobby" className=" h-64 w-42 rounded-xl drop-shadow-2xl"/>
+            <div className=" flex justify-center lg:basis-1/5 md:scale-125">
+                <img src="src\assets\images\Hobby.jpg" alt="Hobby" className=" h-72 w-42 rounded-xl drop-shadow-2xl"/>
             </div>
         </article>
     </div>
