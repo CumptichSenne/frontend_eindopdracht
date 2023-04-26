@@ -11,7 +11,7 @@ export default () => {
                 <img src="src\assets\images\Logo.jpg" alt="Logo" className="h-14 w-14 md:h-20 md:w-20 rounded-full"/>
             </Link>
         </div>
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center mr-4">
             <Link to="/About" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
                 About me
             </Link>
@@ -26,7 +26,7 @@ export default () => {
         <div className="mb-[10vh] mt-[15vh] text-center">
             <h1 className="text-4xl text-center text-slate-200">Contact</h1>
         </div>
-        <article className="flex flex-col items-center align-middle justify-center md:flex-row md:items-center m-4 mb-[6vh]">
+        <article className="flex flex-col items-center align-middle justify-center md:flex-row md:items-center m-4 mb-20">
             <div className="flex flex-col max-w-lg md:basis-3/5 mt-8 bg-slate-700 md:mr-8 rounded-lg drop-shadow-2xl">
                 <p className="text-slate-200 max-w-[32rem] leading-relaxed md:text-lg text-left m-4">
                     If you would like to get in touch with me you can do so by visiting my LinkedIn or Github page.

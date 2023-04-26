@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Image from "../../components/image";
 
 export default () => {
 
@@ -10,7 +11,7 @@ export default () => {
                     <img src="src\assets\images\Logo.jpg" alt="Logo" className="h-14 w-14 md:h-20 md:w-20 rounded-full"/>
                 </Link>
             </div>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center mr-4">
                 <Link to="/About" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
                     About me
                 </Link>
@@ -44,9 +45,7 @@ export default () => {
                         About me
                     </Link>
                 </div>
-                <div className=" flex justify-center lg:basis-1/5 transform transition md:hover:scale-125 mt-8 md:mt-0">
-                    <img src="src\assets\images\SenneCumptich.jpg" alt="Senne Cumptich" className=" h-64 w-36 rounded-xl drop-shadow-2xl"/>
-                </div>
+                <Image imageUrl="src\assets\images\SenneCumptich.jpg" alt="Senne Cumptich" height={40} width={36}/>
             </article>
             <div className="mb-[10vh] mt-[5vh] text-center ml-4 mr-4">
                 <h1 className="text-4xl text-center text-slate-200 font-bold">Projects</h1>
@@ -65,9 +64,7 @@ export default () => {
                         Go to my project page
                     </Link>
                 </div>
-                <div className=" flex justify-center lg:basis-1/5 transform transition md:hover:scale-125 mt-8 md:mt-0">
-                    <img src="src\assets\images\interaction.jpg" alt="Interaction Design" className="h-80 w-64 rounded-xl drop-shadow-2xl"/>
-                </div>
+                <Image imageUrl="src\assets\images\interaction.jpg" alt="Interaction Design" height={80} width={64}/>
             </article>
             <article className="flex flex-col items-center align-middle justify-center md:flex-row-reverse md:items-center m-4 mb-[6vh]">
                 <div className="flex flex-col items-center max-w-lg md:basis-3/5 bg-slate-700 md:ml-8 rounded-lg drop-shadow-2xl">
@@ -83,16 +80,12 @@ export default () => {
                         Go to my project page
                     </Link>
                 </div>
-                <div className="flex flex-col justify-center lg:basis-1/5 gap-8 mt-8 md:mt-0">
-                    <div className="transform transition md:hover:scale-125">
-                        <img src="src\assets\images\projectone_1.jpg" alt="Project one" className="w-56 h-32 rounded-xl drop-shadow-2xl"/>
-                    </div>
-                    <div className="transform transition md:hover:scale-125">
-                        <img src="src\assets\images\projectone_2.jpg" alt="Project one" className="w-56 h-32 rounded-xl drop-shadow-2xl"/>
-                    </div>
+                <div className="flex flex-col justify-center lg:basis-1/5 gap-8 mt-8 md:mt-0 h">
+                    <Image imageUrl="src\assets\images\projectone_1.jpg" alt="Project one" height={80} width={56}/>
+                    <Image imageUrl="src\assets\images\projectone_2.jpg" alt="Project one" height={80} width={56}/>
                 </div>
             </article>
-            <article className="flex flex-col items-center align-middle justify-center md:flex-row md:items-center m-4 mb-[6vh]">
+            <article className="flex flex-col items-center align-middle justify-center md:flex-row md:items-center m-4 mb-20">
                 <div className="flex flex-col items-center max-w-lg md:basis-3/5 bg-slate-700 md:mr-8 rounded-lg drop-shadow-2xl">
                     <h1 className="text-2xl text-center text-slate-200 max-w-[32rem] font-bold m-4">Catch the fish</h1>
                     <p className="text-slate-200 max-w-[32rem] leading-relaxed md:text-lg text-left m-4">
@@ -106,9 +99,7 @@ export default () => {
                         Go to my project page
                     </Link>
                 </div>
-                <div className=" flex justify-center lg:basis-1/5 md:transform md:transition md:hover:scale-125 mt-8 md:mt-0">
-                    <img src="src\assets\images\teamproject.jpg" alt="Team project" className="h-64 w-64 rounded-xl drop-shadow-2xl"/>
-                </div>
+                <Image imageUrl="src\assets\images\teamproject.jpg" alt="Team Project" height={88} width={80}/>
             </article>
         </div>
         <footer className="flex flex-col items-center justify-center pb-4 text-slate-300">
