@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Image from "../../components/image";
+import Navigation from "../../components/navigation";
+import Footer from "../../components/footer";
 
 export default () => {
 
@@ -9,17 +11,13 @@ export default () => {
       <nav className="flex flex-row justify-between items-center bg-slate-900 p-4">
         <div className="flex flex-row items-center">
             <Link to="/">
-                <img src="src\assets\images\Logo.jpg" alt="Logo" className="h-14 w-14 md:h-20 md:w-20 rounded-full"/>
+                <img src="public\images\Logo.jpg" alt="Logo" className="h-14 w-14 md:h-20 md:w-20 rounded-full"/>
             </Link>
         </div>
         <div className="flex flex-row items-center mr-4">
-            <Link to="/About" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
-                About me
-            </Link>
+            <Navigation destination="/About" title="About me"/>
             <p className="text-slate-500 text-base md:text-xl pl-4 font-bold">Projects</p>
-            <Link to="/Contact" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
-                Contact
-            </Link>
+            <Navigation destination="/Contact" title="Contact"/>
         </div>
       </nav>
     </div>
@@ -58,7 +56,7 @@ export default () => {
                         </div>
                     </div>
                 </div>
-                <Image imageUrl="src\assets\images\interaction.jpg" alt="Interaction Design" height={80} width={64}/>
+                <Image imageUrl="public\images\interaction.jpg" alt="Interaction Design" height={80} width={64}/>
             </article>
             <article className="flex flex-col items-center align-middle justify-center md:flex-row-reverse md:items-center m-4 mb-[6vh]">
                 <div className="flex flex-col gap-2">
@@ -108,8 +106,8 @@ export default () => {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center lg:basis-1/5 gap-8 mt-8 md:mt-0">
-                    <Image imageUrl="src\assets\images\projectone_1.jpg" alt="Project one" height={80} width={56}/>
-                    <Image imageUrl="src\assets\images\projectone_2.jpg" alt="Project one" height={80} width={56}/>
+                    <Image imageUrl="public\images\projectone_1.jpg" alt="Project one" height={80} width={56}/>
+                    <Image imageUrl="public\images\projectone_2.jpg" alt="Project one" height={80} width={56}/>
                 </div>
             </article>
             <article className="flex flex-col items-center align-middle justify-center md:flex-row md:items-center m-4 mb-20">
@@ -160,17 +158,10 @@ export default () => {
                         </div>
                     </div>
                 </div>
-                <Image imageUrl="src\assets\images\teamproject.jpg" alt="Team Project" height={88} width={80}/>
+                <Image imageUrl="public\images\teamproject.jpg" alt="Team Project" height={88} width={80}/>
             </article>
-    </div>
-    <footer className="flex flex-col items-center justify-center pb-4 text-slate-300">
-        <p>
-            Made by Senne Cumptich
-        </p>
-        <p>
-            © 2023 
-        </p>
-    </footer>
+        </div>
+    <Footer/>
   </div>
  );
 }

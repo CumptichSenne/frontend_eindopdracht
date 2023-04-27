@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import Navigation from "../../components/navigation";
+import Footer from "../../components/footer";
 
 export default () => {
 
@@ -8,16 +10,12 @@ export default () => {
       <nav className="flex flex-row justify-between items-center bg-slate-900 p-4">
         <div className="flex flex-row items-center">
             <Link to="/">
-                <img src="src\assets\images\Logo.jpg" alt="Logo" className="h-14 w-14 md:h-20 md:w-20 rounded-full"/>
+                <img src="public\images\Logo.jpg" alt="Logo" className="h-14 w-14 md:h-20 md:w-20 rounded-full"/>
             </Link>
         </div>
         <div className="flex flex-row items-center mr-4">
-            <Link to="/About" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
-                About me
-            </Link>
-            <Link to="/Project" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
-                Projects
-            </Link>
+            <Navigation destination="/About" title="About me"/>
+            <Navigation destination="/Project" title="Projects"/>
             <p className="text-slate-500 text-base md:text-xl pl-4 font-bold">Contact</p>
         </div>
       </nav>
@@ -56,14 +54,7 @@ export default () => {
             </div>
         </article>
     </div>
-    <footer className="flex flex-col items-center justify-center pb-4 text-slate-300">
-        <p>
-            Made by Senne Cumptich
-        </p>
-        <p>
-            © 2023 
-        </p>
-    </footer>
+    <Footer/>
   </div>
  );
 }

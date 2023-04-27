@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Image from "../../components/image";
+import Navigation from "../../components/navigation";
+import Footer from "../../components/footer";
 
 export default () => {
 
@@ -9,17 +11,13 @@ export default () => {
       <nav className="flex flex-row justify-between items-center bg-slate-900 p-4">
         <div className="flex flex-row items-center">
             <Link to="/">
-                <img src="src\assets\images\Logo.jpg" alt="Logo" className=" h-14 w-14 md:h-20 md:w-20 rounded-full"/>
+                <img src="public\images\Logo.jpg" alt="Logo" className=" h-14 w-14 md:h-20 md:w-20 rounded-full"/>
             </Link>
         </div>
         <div className="flex flex-row items-center mr-4">
             <p className="text-slate-500 text-base md:text-xl pl-4 font-bold">About me</p>
-            <Link to="/Project" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
-                Projects
-            </Link>
-            <Link to="/Contact" className="text-base md:text-xl text-slate-200 pl-4 font-bold hover:text-yellow-500">
-                Contact
-            </Link>
+            <Navigation destination="/Project" title="Projects"/>
+            <Navigation destination="/Contact" title="Contact"/>
         </div>
       </nav>
     </div>
@@ -38,7 +36,7 @@ export default () => {
                     
                 </p>
             </div>
-            <Image imageUrl="src\assets\images\SenneCumptich.jpg" alt="Senne Cumptich" height={40} width={36}/>
+            <Image imageUrl="public\images\SenneCumptich.jpg" alt="Senne Cumptich" height={40} width={36}/>
         </article>
         <article className="flex flex-col items-center align-middle justify-center md:flex-row-reverse md:items-center mt-[10vh] mb-20">
             <div className="flex flex-col items-center max-w-lg md:basis-3/5 bg-slate-700 md:mr-8 rounded-lg drop-shadow-2xl">
@@ -51,17 +49,10 @@ export default () => {
                     When I do have a little bit of free time I also like to draw. I have been drawing for about 3 years now and I really enjoy it because it's a great way to empty your mind.
                 </p>
             </div>
-            <Image imageUrl="src\assets\images\Hobby.jpg" alt="Monkey D Luffy" height={80} width={56}/>
+            <Image imageUrl="public\images\Hobby.jpg" alt="Monkey D Luffy" height={80} width={56}/>
         </article>
     </div>
-      <footer className="flex flex-col items-center justify-center pb-4 text-slate-300">
-        <p>
-            Made by Senne Cumptich
-        </p>
-        <p>
-            © 2023 
-        </p>
-      </footer>
+      <Footer/>
   </div>
  );
 }
