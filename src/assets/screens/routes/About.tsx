@@ -11,7 +11,7 @@ export default () => {
       <nav className="flex flex-row justify-between items-center bg-slate-900 p-4">
         <div className="flex flex-row items-center">
             <Link to="/">
-                <img src="public\images\Logo.jpg" alt="Logo" className=" h-14 w-14 md:h-20 md:w-20 rounded-full"/>
+                <img src="images\Logo.jpg" alt="Logo" className=" h-14 w-14 md:h-20 md:w-20 rounded-full"/>
             </Link>
         </div>
         <div className="flex flex-row items-center mr-4">
@@ -36,7 +36,7 @@ export default () => {
                     
                 </p>
             </div>
-            <Image imageUrl="public\images\SenneCumptich.jpg" alt="Senne Cumptich" height={40} width={36}/>
+            <Image imageUrl="images\SenneCumptich.jpg" alt="Senne Cumptich" height={40} width={36}/>
         </article>
         <article className="flex flex-col items-center align-middle justify-center md:flex-row-reverse md:items-center mt-[10vh] mb-20">
             <div className="flex flex-col items-center max-w-lg md:basis-3/5 bg-slate-700 md:mr-8 rounded-lg drop-shadow-2xl">
@@ -49,7 +49,7 @@ export default () => {
                     When I do have a little bit of free time I also like to draw. I have been drawing for about 3 years now and I really enjoy it because it's a great way to empty your mind.
                 </p>
             </div>
-            <Image imageUrl="public\images\Hobby.jpg" alt="Monkey D Luffy" height={80} width={56}/>
+            <Image imageUrl="images\Hobby.jpg" alt="Monkey D Luffy" height={80} width={56}/>
         </article>
     </div>
       <Footer/>
