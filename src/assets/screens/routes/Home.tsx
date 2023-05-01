@@ -10,7 +10,7 @@ export default () => {
         <nav className="flex flex-row justify-between items-center bg-slate-900 p-4">
             <div className="flex flex-row items-center">
                 <Link to="/">
-                    <img src="images\Logo.jpg" alt="Logo" className="h-14 w-14 md:h-20 md:w-20 rounded-full"/>
+                    <img src="images\Logo.JPG" alt="Logo" className="h-14 w-14 md:h-20 md:w-20 rounded-full"/>
                 </Link>
             </div>
             <div className="flex flex-row items-center mr-4">
@@ -60,7 +60,7 @@ export default () => {
                         Go to my project page
                     </Link>
                 </div>
-                <Image imageUrl="images\interaction.jpg" alt="Interaction Design" height={80} width={64}/>
+                <Image imageUrl="images\interaction.JPG" alt="Interaction Design" height={80} width={64}/>
             </article>
             <article className="flex flex-col items-center align-middle justify-center md:flex-row-reverse md:items-center m-4 mb-[6vh]">
                 <div className="flex flex-col items-center max-w-lg md:basis-3/5 bg-slate-700 md:ml-8 rounded-lg drop-shadow-2xl">
@@ -95,7 +95,7 @@ export default () => {
                         Go to my project page
                     </Link>
                 </div>
-                <Image imageUrl="images\teamproject.jpg" alt="Team Project" height={88} width={80}/>
+                <Image imageUrl="images\teamproject.jpg" alt="Team Project" height={88} width={88}/>
             </article>
         </div>
         <Footer/>
